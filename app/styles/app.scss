@@ -1,0 +1,21 @@
+@import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap";
+@import "utility";
+ @media (min-width: 768px) {
+         .navbar-nav > li  {
+         	padding-top: 15px;
+         	padding-bottom: 15px; 
+         } 
+ }
+.modal-dialog.modal-progress > .modal-content {
+	max-height: 22px;
+}
+.container {
+	 background-color: #FBFBFB;
+}
+body {
+	 background-color: #FDFDFD;
+}
+
+footer {
+	margin-top:10px;
+}

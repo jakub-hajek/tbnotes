@@ -1,0 +1,28 @@
+{
+  "navbar" : {
+    "choose-language":"Choose language"
+  },
+  "shared" : {
+    "loading":"Loading",
+    "delete":"Delete",
+    "edit":"Edit",
+    "new":"New note",
+    "back":"Back",
+    "update":"Update",
+    "create":"Create",
+    "detail":"Detail",
+    "title-mandatory":"Note title can not be empty"
+
+  },
+  "notelist" : {
+  "heading": {
+    "title": "Notes list"
+  }},
+  "edit" : {
+    "new-title" : "New note",
+    "edit-title" : "Edit note",
+    "detail-title" : "Note detail",
+    "note-tile" : "Note title"
+  }
+
+}

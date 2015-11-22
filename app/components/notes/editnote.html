@@ -1,0 +1,23 @@
+<div  data-ng-controller="EditController">
+		<h1 data-ng-if="isDetail()">{{ 'edit.detail-title' | translate }}</h1>
+		<h1 data-ng-if="isNew()">{{ 'edit.new-title' | translate }}</h1>
+		<h1 data-ng-if="isEdit()">{{ 'edit.edit-title' | translate }}</h1>
+		<form name="noteForm">
+			<div class="form-group" data-ng-if="isEdit() || isNew()">
+			<div ng-if="noteForm.$dirty && !note.title" class="alert alert-danger" role="alert">
+			  
+			  <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>		  
+			  {{ 'shared.title-mandatory' | translate }}
+			</div>
+	 			 <label for="title">{{ 'edit.note-tile' | translate }}</label>
+	 			 <textarea class="form-control" rows="5" id="title" data-ng-model="note.title"></textarea>
+			</div>	
+			<div class="form-group">	
+				<div data-ng-if="isDetail()">{{note.title}}</div>
+			</div>
+			<button data-ui-sref="notes" type="button" class="btn btn-primary">{{ 'shared.back' | translate }}</button>
+			<button data-ng-if="isEdit()"  data-ng-disabled="!note.title" data-ng-click="update()"  type="button" class="btn btn-primary">{{ 'shared.update' | translate }}</button>
+			<button data-ng-if="isNew()"  data-ng-disabled="!note.title" data-ng-click="create()"  type="button" class="btn btn-primary">{{ 'shared.create' | translate }}</button>
+		</form>
+
+</div>

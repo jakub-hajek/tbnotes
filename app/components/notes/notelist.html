@@ -1,0 +1,17 @@
+<div  data-ng-controller="NotesController" class="table-responsive">
+	
+	<h1>{{ 'notelist.heading.title' | translate }}</h1>
+	<table class="table table-striped table-hover">
+		<tr class="" data-ng-repeat="note in notes">
+			<td>
+				<i class="cursor-pointer glyphicon glyphicon-remove" data-ng-click="delete(note.id)" ng-attr-title="{{'shared.delete' | translate}}"></i>
+				<i data-ui-sref="edit({id:note.id})" class="cursor-pointer glyphicon glyphicon-edit" ng-attr-title="{{'shared.edit' | translate}}"></i>
+				<i data-ui-sref="detail({id:note.id})" class="cursor-pointer glyphicon glyphicon-eye-open" ng-attr-title="{{'shared.detail' | translate}}" popover-title="{{'shared.detail' | translate}}"></i>
+			</td>
+			<td >{{note.title}} </td>
+		</tr>
+	</table>
+	<button data-ui-sref="new" type="button" class="btn btn-primary">{{ 'shared.new' | translate }}</button>
+
+
+</div>

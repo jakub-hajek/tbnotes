@@ -1,0 +1,28 @@
+{
+  "navbar" : {
+    "choose-language":"Vyberte jazyk"
+  },
+  "shared" : {
+    "loading":"Načítá se",
+    "delete":"Smazat",
+    "edit":"Upravit",
+    "new":"Nová poznámka",
+    "back":"Zpět",
+    "update":"Uložit",
+    "create":"Vyvořit",
+    "detail":"Detail",
+    "title-mandatory":"Text poznámky je povinný"
+
+  },
+  "notelist" : {
+  "heading": {
+    "title": "Seznam poznámek"
+  }},
+  "edit" : {
+    "new-title" : "Zadání nové poznámky",
+    "edit-title" : "Editace poznámky",
+    "detail-title" : "Detail poznámky",
+    "note-tile" : "Text poznámky"
+  }
+
+}
