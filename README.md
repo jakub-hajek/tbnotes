@@ -14,7 +14,7 @@ b) `gulp` (builds app and starts server listening on http://localhost:9000)
 #development and debugging:
 a) `gulp start-dev` (same as default, but JSs and styles are not minified/concatenated)
 
-Tests:
+#Tests:
 a) `gulp start-e2e-tests`  (starts server & webdrvier and runs tests)
 
 
